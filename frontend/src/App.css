@@ -1,0 +1,53 @@
+:root {
+  --bg: #0f172a;
+  --panel: #111827;
+  --text: #e5e7eb;
+  --muted: #9ca3af;
+  --accent: #60a5fa;
+}
+
+#root {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  color: var(--text);
+}
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.nav { display: flex; gap: 1rem; }
+.nav a { color: var(--muted); text-decoration: none; }
+.nav a.active { color: var(--accent); font-weight: 600; }
+
+.app-main { display: block; }
+
+.panel {
+  background: var(--panel);
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+.field { display: grid; gap: 0.4rem; margin-bottom: 1rem; }
+.field-row { display: flex; gap: 0.5rem; align-items: center; margin-bottom: 1rem; }
+.actions { margin-top: 0.5rem; }
+.message { color: var(--muted); margin-top: 0.5rem; }
+
+input, select, button {
+  background: #0b1020;
+  color: var(--text);
+  border: 1px solid #1f2937;
+  border-radius: 8px;
+  padding: 0.5rem 0.6rem;
+}
+button { cursor: pointer; }
+button:hover { border-color: var(--accent); }
+
+.list { list-style: none; padding: 0; margin: 0; }
+.list-item { display: flex; gap: 0.5rem; align-items: center; padding: 0.3rem 0; }
+
+.grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+.card { background: #0b1020; padding: 0.75rem; border-radius: 10px; }

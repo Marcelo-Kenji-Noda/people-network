@@ -1,0 +1,69 @@
+# Node.js dependencies
+node_modules/
+
+# Build outputs
+/dist/
+**/dist/
+/build/
+**/build/
+
+# TypeScript incremental build info
+*.tsbuildinfo
+
+# Vite caches
+.vite/
+.vite-cache/
+
+# Logs
+logs/
+*.log
+*.log.*
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Environment files (keep examples)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+backend/.env
+frontend/.env
+!.env.example
+!backend/.env.example
+!frontend/.env.example
+
+# Tooling caches
+.eslintcache
+.nyc_output/
+.cache/
+.parcel-cache/
+.tmp/
+
+# OS/editor cruft
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+*.swp
+*.swo
+.idea/
+.vscode/
+
+# Test/coverage
+coverage/
+
+# Local runtime artifacts
+.run/
+.run/**
+
+# Database dumps (do not ignore migration SQL files)
+*.dump
+*.backup
+*.sql.gz
+*.pgdump
+
+.github/*
